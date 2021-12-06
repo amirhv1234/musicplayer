@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0113)https://static.elfsight.com/apps/background-music/release/c25b98e1-04ac-40e5-b574-dd260647638f/preview/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Players Preview</title>
+  <style>.eapps-preview {
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 150px;
+  min-height: 100%;
+  transition: 0.2s;
+}
+.eapps-preview-toolbar {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  z-index: 10;
+}
+@media only screen and (max-width: 480px) {
+  .eapps-preview-toolbar {
+    display: none;
+  }
+}
+.eapps-preview-toolbar-item {
+  position: relative;
+}
+.eapps-preview-toolbar-item-trigger {
+  box-sizing: border-box;
+  padding: 3px 6px;
+  background: #38393a;
+  cursor: pointer;
+}
+.eapps-preview-toolbar-item-trigger:first-child {
+  padding-top: 6px;
+}
+.eapps-preview-toolbar-item-trigger:last-child {
+  padding-bottom: 6px;
+}
+.eapps-preview-toolbar-item-trigger:hover .eapps-preview-toolbar-item-icon svg {
+  fill: #fff;
+}
+.eapps-preview-toolbar-item-icon {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 26px;
+  height: 26px;
+}
+.eapps-preview-toolbar-item-active .eapps-preview-toolbar-item-icon {
+  background: #2c2c2d;
+}
+.eapps-preview-toolbar-item-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: #66686a;
+  transition: 0.1s;
+}
+.eapps-preview-toolbar-item-active .eapps-preview-toolbar-item-icon svg {
+  fill: #fff;
+}
+.eapps-preview-toolbar-item-values {
+  visibility: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  position: absolute;
+  top: 0px;
+  right: 38px;
+  padding: 0 2px;
+  border-radius: 2px;
+  transition: 0.2s;
+  opacity: 0;
+  background: #38393a;
+}
+.eapps-preview-toolbar-item-active .eapps-preview-toolbar-item-values {
+  visibility: visible;
+  opacity: 1;
+  right: 42px;
+}
+.eapps-preview-toolbar-item-value {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  box-sizing: border-box;
+  padding: 4px 2px;
+  cursor: pointer;
+}
+.eapps-preview-toolbar-item-value-icon {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 2px;
+}
+html {
+  height: 100%;
+  overflow: auto;
+}
+body {
+  margin: 0;
+  height: 100%;
+  background: #38393a;
+}
+.widget {
+  max-width: 100%;
+}
+.eapps-preview-background-white {
+  background: #fff;
+}
+.eapps-preview-background-black {
+  background: #252627;
+  color: #fff;
+}
+.eapps-preview-background-white-chess {
+  background-image: url(data:image/png;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAUAAA/+4AJkFkb2JlAGTAAAAAAQMAFQQDBgoNAAABpgAAAccAAAIDAAACMP/bAIQAAgICAgICAgICAgMCAgIDBAMCAgMEBQQEBAQEBQYFBQUFBQUGBgcHCAcHBgkJCgoJCQwMDAwMDAwMDAwMDAwMDAEDAwMFBAUJBgYJDQsJCw0PDg4ODg8PDAwMDAwPDwwMDAwMDA8MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8IAEQgAFAAUAwERAAIRAQMRAf/EAH8AAAMBAQAAAAAAAAAAAAAAAAIDBAEIAQEAAAAAAAAAAAAAAAAAAAAAEAACAwEAAAAAAAAAAAAAAAAAATARMRARAQAAAAAAAAAAAAAAAAAAADASAQAAAAAAAAAAAAAAAAAAADATAAEEAwEAAAAAAAAAAAAAAAEAEDAx8BGxYf/aAAwDAQACEQMRAAAB7kHhgCzCgnBP/9oACAEBAAEFAhYUjC3x6f/aAAgBAgABBQKH/9oACAEDAAEFAof/2gAIAQICBj8CH//aAAgBAwIGPwIf/9oACAEBAQY/Ah//2gAIAQEDAT8hVTeSJJaFL2a5v//aAAgBAgMBPyGH/9oACAEDAwE/IYf/2gAMAwEAAhEDEQAAEBBJBB//2gAIAQEDAT8QXV1sRKOD6CgsQDcXG//aAAgBAgMBPxCH/9oACAEDAwE/EIf/2Q==);
+}
+.eapps-preview-background-black-chess {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACxJREFUeNpiVFfXYMAN/v3/j0eWiYECMKp5ZGhmIZCGGBlHA2xUMyWaAQIMAJSTBpxFdlboAAAAAElFTkSuQmCC);
+  color: #fff;
+}
+</style><style>.eapp-background-music-root-layout-component {
+  position: relative;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+.eapp-background-music-root-layout-component,
+.eapp-background-music-root-layout-component * {
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+.eapp-background-music-root-layout-component a {
+  text-decoration: none;
+}
+.eapp-background-music-root-layout-component a:hover,
+.eapp-background-music-root-layout-component a:focus {
+  text-decoration: underline;
+}
+</style><style data-styled="" data-styled-version="4.4.1"></style><style data-emotion="css"></style><style>body {
+  padding: 0;
+  font: 400 normal 15px/1.3 -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+}
+.eapps-preview-widget {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 0 auto;
+  min-width: 150px;
+  min-height: 100%;
+  transition: 0.2s;
+}
+.eapp-background-music-root-layout-component {
+  width: auto;
+}
+</style></head>
+  <body class="eapps-preview-background-white-chess">
+    <div class="eapps-preview">
+      <div class="eapps-preview-widget"><style></style><div id="eapps-background-music-4b580287-8b75-4c80-bacb-ca0539e986e6" class="RootLayout__Component-sc-1doisyz-0 gFttre eapps-background-music-4b580287-8b75-4c80-bacb-ca0539e986e6-custom-css-hook" data-app="eapps-background-music" data-app-version="1.0.11"><div hidden="" class="ReactPlayer__Wrapper-sc-yyn4cw-0 hbvVZP"><video src="https://files.elfsight.com/storage/b27fdf3d-b477-40ce-84d4-ddcade571fb4/13e696bd-1167-41ec-8c64-17e16b630b01." preload="auto" controls="" playsinline="" webkit-playsinline="" x5-playsinline="" style="width: 100%; height: 100%;"></video></div><div class="AudioPlayer__Component-sc-1kmribq-0 cVHdzc"></div></div></div>
+    </div>
+  <script type="text/javascript" src="./preview.js.download"></script>
+
+<div><div style="" class="eapp-background-music-root-layout-component eapps-background-music-4b580287-8b75-4c80-bacb-ca0539e986e6-custom-css-hook" id="portal-4b580287-8b75-4c80-bacb-ca0539e986e6"></div></div><div color="#000" class="FloatingBackground__Container-sc-xsfpc5-0 cnNKzZ"><div class="FloatingBackground__Inner-sc-xsfpc5-1 iRGIDU"><div class="Background__Component-sc-1lq8xr6-0 jqUbtA"><div class="Background__Controls-sc-1lq8xr6-1 jgKBUG"><div class="Background__ControlsMain-sc-1lq8xr6-2 exQZei"><div class="DefaultButton__IconComponent-sc-1hh23tw-0 hIKLRV Prev__Component-sc-1di3ylj-0 fVNVAN"><svg viewBox="0 0 24 24" fill="rgb(0, 0, 0)" class="Prev__Icon-sc-1di3ylj-1 cCMEhb"><path d="M11.253 17.84l-6.955-5.248a.736.736 0 0 1 0-1.184l6.955-5.249c.507-.383 1.247-.032 1.247.592V17.25c0 .624-.74.975-1.247.592zm8.5 0l-6.955-5.248a.736.736 0 0 1 0-1.184l6.955-5.249C20.26 5.776 21 6.127 21 6.751V17.25c0 .624-.74.975-1.247.592z"></path></svg></div><div class="DefaultButton__IconComponent-sc-1hh23tw-0 hIKLRV Play__Component-sc-1auz51e-0 bUaBFP"><svg viewBox="0 0 36 36" fill="#000" class="Play__Icon-sc-1auz51e-1 esrsve"><path d="M12.233 7.68l15.75 10.124c.69.443.69 1.45 0 1.892L12.233 29.82a1.125 1.125 0 0 1-1.733-.947V8.627c0-.89.985-1.428 1.733-.947z"></path></svg></div><div class="DefaultButton__IconComponent-sc-1hh23tw-0 hIKLRV Next__Component-sc-1yc6021-0 gSvRTm"><svg viewBox="0 0 24 24" fill="rgb(0, 0, 0)" class="Next__Icon-sc-1yc6021-1 jiaJfg"><path d="M12.747 17.84l6.955-5.248a.736.736 0 0 0 0-1.184L12.747 6.16c-.507-.383-1.247-.032-1.247.592V17.25c0 .624.74.975 1.247.592zm-8.5 0l6.955-5.248a.736.736 0 0 0 0-1.184L4.247 6.16C3.74 5.776 3 6.127 3 6.751V17.25c0 .624.74.975 1.247.592z"></path></svg></div></div><div class="Background__ControlsSecond-sc-1lq8xr6-3 jMxXLH"><div class="DefaultButton__IconComponent-sc-1hh23tw-0 hIKLRV Shuffle__ShuffleComponent-sc-1ob01n-0 bystAA" title="Shuffle"><svg viewBox="0 0 24 24" fill="rgba(0, 0, 0, 0.5)" class="Shuffle__Icon-sc-1ob01n-1 bwMXcK"><path d="M17.643 5.157l.07.063 2.072 2.122.05.059.027.034.028.042.041.078.032.082.026.105.008.067.003.076-.005.079-.014.081-.018.063-.032.083-.017.036-.024.042-.032.048-.019.025-.054.061-2.073 2.123a.721.721 0 0 1-1.036 0 .764.764 0 0 1-.061-.99l.06-.071.822-.842h-2.199L12 12l3.298 3.376h2.2l-.822-.84a.763.763 0 0 1 0-1.062.721.721 0 0 1 1.036 0l2.073 2.123a.75.75 0 0 1 .06.067l-.06-.067c.029.029.055.06.077.092l.028.042.041.079.032.082.026.104.01.087-.001.103-.01.072-.025.104-.032.083-.041.078-.05.074-.055.06-2.073 2.123a.721.721 0 0 1-1.036 0 .763.763 0 0 1 0-1.061l.821-.842h-2.376l-.064-.002a.722.722 0 0 1-.58-.217l-3.514-3.597-3.513 3.597a.727.727 0 0 1-.422.213l-.096.007H4.733a.742.742 0 0 1-.733-.75c0-.386.283-.703.648-.746l.085-.005h1.895L9.926 12 6.628 8.623H4.733A.742.742 0 0 1 4 7.873c0-.415.328-.75.733-.75h2.199c.194 0 .38.078.518.22l3.513 3.596 3.514-3.597.066-.06.066-.047.076-.042.058-.025.054-.018.085-.019.089-.008h2.526l-.821-.842a.763.763 0 0 1 0-1.061.72.72 0 0 1 .967-.063z"></path></svg></div><div class="DefaultButton__IconComponent-sc-1hh23tw-0 hIKLRV Loop__LoopComponent-sc-1tk13b1-0 kRqdjf" title="No Repeat"><svg viewBox="0 0 24 24" fill="rgba(0, 0, 0, 0.5)" class="Loop__Icon-sc-1tk13b1-1 cKmPRk"><path d="M16.25 11.75a.75.75 0 0 1 .745.663L17 12.5V14a3.75 3.75 0 0 1-3.587 3.747l-.163.003H6.56l.97.97a.75.75 0 0 1-.99 1.123l-.07-.063-2.25-2.25a.756.756 0 0 1-.073-.084l-.056-.087-.046-.103-.018-.057-.019-.088-.005-.044L4 16.986l.003-.053.012-.084.022-.083.033-.083.04-.074.022-.034.025-.035.063-.07 2.25-2.25a.75.75 0 0 1 1.123.99l-.063.07-.97.97h6.69a2.25 2.25 0 0 0 2.246-2.118L15.5 14v-1.5a.75.75 0 0 1 .75-.75zm-1.79-6.593l.07.063 2.25 2.25.031.033.042.05.053.084.024.046.025.06.018.058.019.088.006.066v.09l-.003.043-.016.087-.024.081-.025.061-.04.074-.037.055-.035.043-.038.041-2.25 2.25a.75.75 0 0 1-1.123-.99l.063-.07.969-.97H7.75a2.25 2.25 0 0 0-2.246 2.118L5.5 11v1.5a.75.75 0 0 1-1.495.087L4 12.5V11a3.75 3.75 0 0 1 3.587-3.747l.163-.003h6.689l-.97-.97a.75.75 0 0 1-.062-.99l.063-.07a.75.75 0 0 1 .99-.063z"></path></svg></div><div class="VolumeProvider__VolumeControlComponent-sc-1m731xs-0 dgxQHi"><div class="VolumeControlSlider__VolumeControlSliderComponent-sc-1nrpcee-0 jcBIIK" style="opacity: 0;"><div class="VolumeControlSlider__Inner-sc-1nrpcee-1 cApiPl"><div class="VolumeControlSlider__Track-sc-1nrpcee-3 bqxVGA" style="transform: scale(1); cursor: pointer;"><div tabindex="0" aria-valuemax="1" aria-valuemin="0" aria-valuenow="0.6" draggable="false" role="slider" class="VolumeControlSlider__Thumb-sc-1nrpcee-4 kaMSCw" style="position: absolute; z-index: 0; cursor: grab; user-select: none; touch-action: none; transform: translate(-6.99777px, 29.4062px);"></div><div class="VolumeControlSlider__VolumeLevel-sc-1nrpcee-2 jdkhqE" style="height: 60%;"></div></div></div></div><div class="DefaultButton__IconComponent-sc-1hh23tw-0 hIKLRV VolumeControlButton__VolumeControlButtonComponent-sc-6zst4m-0 ievDfA"><div class="VolumeControlIcon__Component-sc-mjt10s-0 iygwBs"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="rgb(0, 0, 0)"><path d="M63.4,71.6c-1.2,0-2.3-0.6-2.9-1.7c-0.9-1.6-0.4-3.7,1.2-4.6c5.5-3.2,8.9-9.1,8.9-15.4s-3.4-12.2-8.9-15.4 c-1.6-0.9-2.2-3-1.2-4.6c0.9-1.6,3-2.2,4.6-1.2c7.5,4.4,12.2,12.5,12.2,21.2s-4.7,16.8-12.2,21.2C64.6,71.5,64,71.6,63.4,71.6z" style="opacity: 1;"></path><path d="M57.1,60.7c-1.2,0-2.3-0.6-2.9-1.7c-0.9-1.6-0.4-3.7,1.2-4.6C57,53.5,58,51.8,58,50s-1-3.5-2.6-4.4 c-1.6-0.9-2.2-3-1.2-4.6c0.9-1.6,3-2.2,4.6-1.2c3.6,2.1,5.9,6,5.9,10.2s-2.3,8.1-5.9,10.2C58.2,60.5,57.7,60.7,57.1,60.7z" style="opacity: 1;"></path><polygon points="85,40 80,35 70,45 60,35 55,40 65,50 55,60 60,65 70,55 80,65 85,60 75,50 " style="opacity: 0;"></polygon><path d="M44.2,24.3L28.7,36.6l-0.3,0.3H11.9c-1.1,0-1.9,0.9-1.9,1.9v22.3c0,1.1,0.9,1.9,1.9,1.9h16.4l0.3,0.3l15.5,12.4 c1.3,1,3.1,0.1,3.1-1.5V25.8C47.3,24.2,45.5,23.3,44.2,24.3z"></path></svg></div></div></div></div></div><div class="Playlist__Component-sc-gcmo55-0 juQNLD Background__StyledPlaylist-sc-1lq8xr6-4 kWwNES"><div class="Playlist__Container-sc-gcmo55-1 buMCaG"><div style="position: relative; overflow: hidden; width: 100%; height: 100%; min-height: 0px; max-height: 286px;"><div style="position: relative; overflow: scroll; margin-right: -16px; margin-bottom: -16px; min-height: 16px; max-height: 302px;"><div class="PlaylistItem__PlaylistItemComponent-sc-18sj3f1-14 dXBJRe"><div class="PlaylistItem__PlaylistItemInfoContainer-sc-18sj3f1-15 iinDTF"><div class="Image__ImageContainer-sc-1jo7lpx-0 HZYgd PlaylistItem__ImageContainer-sc-18sj3f1-0 lqQHE"><div class="Image__Container-sc-1jo7lpx-1 ijnwJt"><img class="Image__ImageComponent-sc-1jo7lpx-2 bKmYOd" style="opacity: 0;"></div><div class="PlaylistItem__IconContainer-sc-18sj3f1-1 gQtnWs" style="opacity: 1;"><svg viewBox="0 0 36 36" fill="#fff" class="PlaylistItem__Icon-sc-18sj3f1-2 dXVeoZ"><path d="M12.233 7.68l15.75 10.124c.69.443.69 1.45 0 1.892L12.233 29.82a1.125 1.125 0 0 1-1.733-.947V8.627c0-.89.985-1.428 1.733-.947z"></path></svg></div></div><div class="PlaylistItem__Info-sc-18sj3f1-7 dCsZzC"><div title="Screem" class="PlaylistItem__Title-sc-18sj3f1-8 htwSOI">Screem</div></div><div class="PlaylistItem__Duration-sc-18sj3f1-13 bTifzD">1:00</div></div></div></div><div style="display: none;"><div style="display: none; width: 0px; transform: translateX(0px);"></div></div><div style="position: absolute; width: 6px; right: 2px; bottom: 2px; top: 2px; border-radius: 3px;"><div color="#000" class="Playlist__Thumb-sc-gcmo55-2 gAjARG" style="height: 0px;"></div></div></div></div></div></div></div></div></body></html>

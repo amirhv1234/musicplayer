@@ -1,0 +1,10 @@
+setInterval(function(){
+        
+    var second2 = second+1;
+    if (second2>=60){
+        second2 = 0 ;
+        minute=+1 ;
+    }
+    document.getElementById('minutet').innerHTML = minute;
+    document.getElementById('secondt').innerHTML = second2;
+},1000);
